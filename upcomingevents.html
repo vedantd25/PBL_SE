@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upcoming Events</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <h1>Upcoming Events</h1>
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'event1')" id="defaultOpen">Tree Plantation</button>
+    <!--<button class="tablinks" onclick="openTab(event, 'event2')">Nature</button>-->
+    <button class="tablinks" onclick="openTab(event, 'event3')">Cleanliness Drives</button>
+  </div>
+  <div id="event1" class="tabcontent">
+    <h2><a href="https://www.nelda.org.in/event-calendar/" class="logo"><strong>Tree Plantation Program</strong></a></h2>
+    <h3>Date: </h3> <p>15th July 2023</p>
+    <h3>Location:</h3><p>ABC Park</p>
+    <h3>Description</h3><p> We believe trees are the mother earth’s way of showering us with love, showing us beauty & teaching us how important it is to be self-sustainable.</p>
+    <ul class="actions">
+        <li><a href="https://www.nelda.org.in/event-calendar/" class="button big">ENROLL</a></li>
+    </ul>   
+</div>
+
+  <!--<div id="event2" class="tabcontent">
+    <h2><a href="" class="logo"><strong>2. </strong></a></h2>
+    <h3>Date: </h3> <p></p>
+    <h3>Location:</h3><p></p>
+    <h3>Description</h3><p> </p>
+    <ul class="actions">
+        <li><a href="" class="button big">ENROLL</a></li>
+    </ul> 
+</div>-->
+
+  <div id="event3" class="tabcontent">
+    <h2><a href="https://www.eventbrite.com/e/clean-up-drive-pune-tickets-595649031287" class="logo"><strong>Cleanliness Drive</strong></a></h2>
+    <h3>Date: </h3> <p>30th July 2023</p>
+    <h3>Location:</h3><p>Sanjay Gandhi National Park</p>
+    <h3>Description</h3><p> Volunteers will collect plastic waste such as
+      bottles, bags, etc, and garbage off the beach to
+      create awareness about the environment &
+      sustainability and promote the importance of
+      World Earth Day.</p>
+    <ul class="actions">
+        <li><a href="https://www.eventbrite.com/e/clean-up-drive-pune-tickets-595649031287" class="button big">ENROLL</a></li>
+    </ul> 
+</div>
+
+  <script>
+    // Function to open the corresponding tab content
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Open the default tab on page load
+    document.getElementById("defaultOpen").click();
+  </script>
+</body>
+</html>
