@@ -126,7 +126,7 @@
 
 								<h1>Contact Us!</h1>
 										<ul class="actions">
-											<li><a href="index.php" class="button big">Contact Us</a></li>
+											<li><a href="contactform.php" class="button big">Contact Us</a></li>
 										</ul>
 						</div>
 					</div>
